@@ -19,6 +19,7 @@
       </div>
     </div>
     <div id="unity-warning"> </div>
+
   </div>
   <script>
 
@@ -54,11 +55,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/v1.3.1 (changed the forground xp and stuffs).loader.js";
+    var loaderUrl = buildUrl + "/v1.3.1.1 (added the special item).loader.js";
     var config = {
-      dataUrl: buildUrl + "/v1.3.1 (changed the forground xp and stuffs).data",
-      frameworkUrl: buildUrl + "/v1.3.1 (changed the forground xp and stuffs).framework.js",
-      codeUrl: buildUrl + "/v1.3.1 (changed the forground xp and stuffs).wasm",
+      dataUrl: buildUrl + "/v1.3.1.1 (added the special item).data",
+      frameworkUrl: buildUrl + "/v1.3.1.1 (added the special item).framework.js",
+      codeUrl: buildUrl + "/v1.3.1.1 (added the special item).wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "Space Rocket",
@@ -104,6 +105,7 @@
         progressBarFull.style.width = 100 * progress + "%";
       }).then((unityInstance) => {
         loadingBar.style.display = "none";
+
       }).catch((message) => {
         alert(message);
       });
